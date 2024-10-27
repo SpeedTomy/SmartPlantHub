@@ -1,0 +1,2666 @@
+[
+    {
+        "id": "484c8a8a41f878cc",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "691e77f87ab92094",
+        "type": "tab",
+        "label": "Flux 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "88740b080aad79ab",
+        "type": "tab",
+        "label": "Flux 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8c2c7f720c310869",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.ci-ciad.utbm.fr",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0eeec9a9ade5ee1b",
+        "type": "ui_tab",
+        "name": "Culture hydroponique",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d668c25966c7759f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#70ae6f",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#6db046",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#4b7930",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ef579b9411147e11",
+        "type": "ui_group",
+        "name": "Statistiques",
+        "tab": "0eeec9a9ade5ee1b",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d3d8946c321a8ab1",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "jmfysqttpw35gktfli6ruf0lh2ugkn7uum0jwq7uuyjrn5yyfv5ap2885hbdhgnn",
+        "server": "nodered02.remote-red.com",
+        "region": "de"
+    },
+    {
+        "id": "2b749f51a98cf54b",
+        "type": "ui_group",
+        "name": "Gestion à distance",
+        "tab": "7d245218c3d8a970",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d4151895c2a8cd08",
+        "type": "ui_group",
+        "name": "Mode",
+        "tab": "0eeec9a9ade5ee1b",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7d245218c3d8a970",
+        "type": "ui_tab",
+        "name": "Gestion à distance",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "32f0a104b2ebacbf",
+        "type": "ui_group",
+        "name": "Suivi en temps réel",
+        "tab": "7d245218c3d8a970",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "c456dcd96c85fd0b",
+        "type": "MySQLdatabase",
+        "name": "culture_hydroponique",
+        "host": "localhost",
+        "port": "3306",
+        "db": "culture_hydroponique",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "79505669bce756dc",
+        "type": "MySQLdatabase",
+        "name": "Database",
+        "host": "localhost",
+        "port": "3306",
+        "db": "culture_hydroponique",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "014dfe8b6eb7c657",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.ci-ciad.utbm.fr",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fd2276731379f0f1",
+        "type": "ui_group",
+        "name": "Statistiques 2",
+        "tab": "0eeec9a9ade5ee1b",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e01acaa35bfee30c",
+        "type": "ui_group",
+        "name": "statistiques",
+        "tab": "0eeec9a9ade5ee1b",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f7f0f9b1b00325b1",
+        "type": "ui_group",
+        "name": "    ",
+        "tab": "7d245218c3d8a970",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "a6a3b48470324252",
+        "type": "ui_tab",
+        "name": "Suivi des données ",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "11651c8067abbf22",
+        "type": "ui_group",
+        "name": "Graphique",
+        "tab": "a6a3b48470324252",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "337895ccef068f91",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "a6a3b48470324252",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "a4e114c291948dfb",
+        "type": "ui_group",
+        "name": "Liste des actionneurs",
+        "tab": "1ac1b910074beb34",
+        "order": 1,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ab3181adce0322dd",
+        "type": "ui_group",
+        "name": "Capteur",
+        "tab": "1ac1b910074beb34",
+        "order": 2,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aebea5a06a687170",
+        "type": "ui_group",
+        "name": "Mode (liste plante)",
+        "tab": "1ac1b910074beb34",
+        "order": 4,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9b784d503fe94c88",
+        "type": "ui_group",
+        "name": "Historique",
+        "tab": "1ac1b910074beb34",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1ac1b910074beb34",
+        "type": "ui_tab",
+        "name": "Serre connecté",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "666a6b024b3bab48",
+        "type": "mqtt in",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ValeurHumidite",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "e9b883fd69dfae68",
+                "86c75815e1e6ced3"
+            ]
+        ]
+    },
+    {
+        "id": "affa0ed33316d80a",
+        "type": "mqtt out",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/mode",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8c2c7f720c310869",
+        "x": 740,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e9b883fd69dfae68",
+        "type": "ui_gauge",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "group": "ef579b9411147e11",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Niveau d'Humidité",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ca3838",
+            "#e6e600",
+            "#20df40"
+        ],
+        "seg1": "30",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 550,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "329ebfac7eb69801",
+        "type": "mqtt in",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ValeurNiveauEau",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "99d8d25d55ceaa68",
+                "7a71813939e67e23",
+                "8d56ee48f2c7177e"
+            ]
+        ]
+    },
+    {
+        "id": "03f4f726e4005b2e",
+        "type": "mqtt in",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ValeurLuminosite",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 480,
+        "wires": [
+            [
+                "f6bd136324975419",
+                "b5460f7265643e73"
+            ]
+        ]
+    },
+    {
+        "id": "f6bd136324975419",
+        "type": "ui_gauge",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "group": "fd2276731379f0f1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Valeur de la Luminosité",
+        "label": "lux",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#4d4242",
+            "#c1c18a",
+            "#efff14"
+        ],
+        "seg1": "100",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 510,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c983fbf171ab7424",
+        "type": "remote-access",
+        "z": "484c8a8a41f878cc",
+        "confignode": "d3d8946c321a8ab1",
+        "name": "acces remote",
+        "verbose": true,
+        "x": 730,
+        "y": 400,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b27a3425d473452d",
+        "type": "mqtt in",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ValeurTemperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 540,
+        "wires": [
+            [
+                "d859e49b10c0a918",
+                "fe3dbdacefba3ac6"
+            ]
+        ]
+    },
+    {
+        "id": "d859e49b10c0a918",
+        "type": "ui_gauge",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "group": "fd2276731379f0f1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Température",
+        "label": "degrès Celsius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "34",
+        "diff": false,
+        "className": "",
+        "x": 490,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "beaaec00e280c277",
+        "type": "ui_switch",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "label": "Contrôle à distance",
+        "tooltip": "",
+        "group": "d4151895c2a8cd08",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 60,
+        "wires": [
+            [
+                "affa0ed33316d80a",
+                "b05c6e45dfe4ac6d"
+            ]
+        ]
+    },
+    {
+        "id": "da5043432bf72ac3",
+        "type": "mqtt in",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/mode",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": true,
+        "rap": true,
+        "rh": "2",
+        "inputs": 0,
+        "x": 160,
+        "y": 60,
+        "wires": [
+            [
+                "beaaec00e280c277"
+            ]
+        ]
+    },
+    {
+        "id": "9afba2295767c143",
+        "type": "mqtt in",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ValeurQualiteAir",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 640,
+        "wires": [
+            [
+                "d69d370144b89df3",
+                "28946e73b253f3c8"
+            ]
+        ]
+    },
+    {
+        "id": "d69d370144b89df3",
+        "type": "ui_gauge",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "group": "e01acaa35bfee30c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Qualité d'Air",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": "400",
+        "max": "2000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1000",
+        "seg2": "1400",
+        "diff": false,
+        "className": "",
+        "x": 490,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "86c75815e1e6ced3",
+        "type": "change",
+        "z": "484c8a8a41f878cc",
+        "name": "humidité",
+        "rules": [
+            {
+                "t": "set",
+                "p": "humidite",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04ea5e3b854fb144",
+        "type": "change",
+        "z": "484c8a8a41f878cc",
+        "name": "niveauEau",
+        "rules": [
+            {
+                "t": "set",
+                "p": "niveauEau",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5460f7265643e73",
+        "type": "change",
+        "z": "484c8a8a41f878cc",
+        "name": "luminosité",
+        "rules": [
+            {
+                "t": "set",
+                "p": "luminosite",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe3dbdacefba3ac6",
+        "type": "change",
+        "z": "484c8a8a41f878cc",
+        "name": "temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28946e73b253f3c8",
+        "type": "change",
+        "z": "484c8a8a41f878cc",
+        "name": "qualitéAir",
+        "rules": [
+            {
+                "t": "set",
+                "p": "qualiteAir",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2458a244d4c630c7",
+        "type": "mqtt in",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/Allumage",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": true,
+        "rap": true,
+        "rh": "2",
+        "inputs": 0,
+        "x": 170,
+        "y": 820,
+        "wires": [
+            [
+                "22d6b61e2f0a56f3"
+            ]
+        ]
+    },
+    {
+        "id": "22d6b61e2f0a56f3",
+        "type": "ui_switch",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "label": "Allumage",
+        "tooltip": "",
+        "group": "d4151895c2a8cd08",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 420,
+        "y": 820,
+        "wires": [
+            [
+                "bba142550ee65f6d",
+                "50f42d37c970d40e"
+            ]
+        ]
+    },
+    {
+        "id": "bba142550ee65f6d",
+        "type": "mqtt out",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/Allumage",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8c2c7f720c310869",
+        "x": 730,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "50f42d37c970d40e",
+        "type": "ui_led",
+        "z": "484c8a8a41f878cc",
+        "order": 2,
+        "group": "d4151895c2a8cd08",
+        "width": 0,
+        "height": 0,
+        "label": "On/Off",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "99d8d25d55ceaa68",
+        "type": "ui_text",
+        "z": "484c8a8a41f878cc",
+        "group": "ef579b9411147e11",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Niveau d'eau :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 520,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7a71813939e67e23",
+        "type": "ui_led",
+        "z": "484c8a8a41f878cc",
+        "order": 3,
+        "group": "ef579b9411147e11",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "Vide",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "Plein",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 510,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "2cc22929a47b82b3",
+        "type": "ui_template",
+        "z": "484c8a8a41f878cc",
+        "group": "",
+        "name": "Node-Red Dashboard Custom CSS",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    /* Main background with image */\n    body {\n        background-image: url('https://media.istockphoto.com/id/1395068267/fr/vid%C3%A9o/main-rapproch%C3%A9e-planter-un-arbre.jpg?s=640x640&k=20&c=0Jh2TTUsM9Ym026ysC3zHGxafIqEkjT2907QTAUqdr0=');\n        /* Remplacez par le chemin de votre image */\n        background-size: cover;\n        background-repeat: no-repeat;\n        background-attachment: fixed;\n        background-position: center;\n        margin: 0;\n        color: white; /* Couleur du texte en blanc */\n    }\n\n    /* Top bar */\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n        background-color: #65793c;\n        color: white !important; /* Couleur du texte en blanc */\n    }\n\n    /* Left menu */\n    /* Sidebar */\n    body.nr-dashboard-theme md-sidenav {\n        color: white !important; /* Couleur du texte en blanc */\n        background-color: rgba(0, 0, 0, 0) !important;\n    }\n\n    /* Hover selection */\n    a.md-no-style,\n    button.md-no-style {\n        border-radius: 10px !important;\n    }\n\n    /* Selected */\n    .nr-menu-item-active div button {\n        border-right: 4px solid #509f2e !important;\n        /* Bordure de sélection verte */\n    }\n\n    /* List */\n    body.nr-dashboard-theme md-sidenav div.md-list-item-inner {\n        color: white !important; /* Couleur du texte en blanc */\n        background-color: #8dc63f !important;\n        /* Fond vert clair */\n        border-radius: 10px !important;\n    }\n\n    /* Groups */\n    ui-card-panel {\n        background-color: rgba(255, 255, 255, 0.1) !important;\n        border-radius: 10px !important;\n    }\n\n    .nr-dashboard-theme ui-card-panel {\n        border: none !important;\n    }\n\n    /* Name groups */\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n        color: rgba(255, 255, 255, 0.5) !important;\n    }\n\n    /* Buttons */\n    .nr-dashboard-theme .nr-dashboard-button .md-button {\n        background-color: rgba(255, 255, 255, .1) !important;\n        color: white !important; /* Couleur du texte en blanc */\n    }\n\n    .md-button {\n        border-radius: 10px !important;\n    }\n\n    /* Dropdown menu */\n    .nr-dashboard-theme md-select-menu {\n        background-color: #8dc63f !important;\n        /* Fond vert clair */\n    }\n\n    .nr-dashboard-theme md-select-menu,\n    .nr-dashboard-theme md-select-menu md-option {\n        background-color: transparent !important;\n    }\n\n    .nr-dashboard-theme .md-select-menu-container {\n        border-radius: 10px !important;\n        border: none !important;\n    }\n\n    .nr-dashboard-theme md-select-menu md-option[selected] {\n        color: white !important; /* Couleur du texte en blanc */\n        background-color: #509f2e !important;\n        /* Fond vert foncé */\n    }\n\n    /* Template */\n    md-card>img,\n    md-card>md-card-header img,\n    md-card md-card-title-media img {\n        border-radius: 10px !important;\n    }\n\n    /* Color picker text BG */\n    .nr-dashboard-theme .color-picker-input-wrapper>input {\n        color: white !important; /* Couleur du texte en blanc */\n        background-color: transparent !important;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 400,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6012567bb0e48e0",
+        "type": "mqtt in",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/pompe",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": true,
+        "rap": true,
+        "rh": "2",
+        "inputs": 0,
+        "x": 180,
+        "y": 1020,
+        "wires": [
+            [
+                "bb3f9e34b30bd100",
+                "f91cc42ae2402765"
+            ]
+        ]
+    },
+    {
+        "id": "43857f98f4c3b09c",
+        "type": "mqtt in",
+        "z": "484c8a8a41f878cc",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ventilateur",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": true,
+        "rap": true,
+        "rh": "2",
+        "inputs": 0,
+        "x": 190,
+        "y": 1080,
+        "wires": [
+            [
+                "7f2e2d56eca0cb89",
+                "f3ac2b5e3e2d0495"
+            ]
+        ]
+    },
+    {
+        "id": "bb3f9e34b30bd100",
+        "type": "ui_text",
+        "z": "484c8a8a41f878cc",
+        "group": "ef579b9411147e11",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Pompe :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 446.33331298828125,
+        "y": 995.6666870117188,
+        "wires": []
+    },
+    {
+        "id": "f91cc42ae2402765",
+        "type": "ui_led",
+        "z": "484c8a8a41f878cc",
+        "order": 5,
+        "group": "ef579b9411147e11",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "Off",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "On",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 626.3333129882812,
+        "y": 1015.6666870117188,
+        "wires": []
+    },
+    {
+        "id": "7f2e2d56eca0cb89",
+        "type": "ui_text",
+        "z": "484c8a8a41f878cc",
+        "group": "ef579b9411147e11",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Ventilateur :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 470,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "f3ac2b5e3e2d0495",
+        "type": "ui_led",
+        "z": "484c8a8a41f878cc",
+        "order": 7,
+        "group": "ef579b9411147e11",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "Off",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "On",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 630,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "b05c6e45dfe4ac6d",
+        "type": "link out",
+        "z": "484c8a8a41f878cc",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "9025fc49c4b38f18"
+        ],
+        "x": 645,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8d56ee48f2c7177e",
+        "type": "switch",
+        "z": "484c8a8a41f878cc",
+        "name": "Controle_NiveauEau",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Vide",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Plein",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "04ea5e3b854fb144"
+            ],
+            [
+                "24ae121fb52da145"
+            ]
+        ]
+    },
+    {
+        "id": "24ae121fb52da145",
+        "type": "change",
+        "z": "484c8a8a41f878cc",
+        "name": "niveauEau",
+        "rules": [
+            {
+                "t": "set",
+                "p": "niveauEau",
+                "pt": "flow",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 547.3333129882812,
+        "y": 420.33331298828125,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e44c33da2138320e",
+        "type": "mqtt out",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/pompe",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8c2c7f720c310869",
+        "x": 570,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "e35bf861165c9649",
+        "type": "ui_switch",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "label": "ventilateur ",
+        "tooltip": "",
+        "group": "2b749f51a98cf54b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 220,
+        "y": 180,
+        "wires": [
+            [
+                "dab70509d17a6f16",
+                "36483e6daa47227b"
+            ]
+        ]
+    },
+    {
+        "id": "dab70509d17a6f16",
+        "type": "mqtt out",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ventilateur",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8c2c7f720c310869",
+        "x": 580,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5c1c661f70f5858a",
+        "type": "ui_switch",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "label": "pompe",
+        "tooltip": "",
+        "group": "2b749f51a98cf54b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 210,
+        "y": 40,
+        "wires": [
+            [
+                "e44c33da2138320e",
+                "941f342321730863"
+            ]
+        ]
+    },
+    {
+        "id": "92bb6d9e9c38b069",
+        "type": "mqtt in",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ValeurHumidite",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 440,
+        "wires": [
+            [
+                "eddd0f03a7e937e7",
+                "81390bfdba70d8e7"
+            ]
+        ]
+    },
+    {
+        "id": "eddd0f03a7e937e7",
+        "type": "ui_gauge",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "group": "32f0a104b2ebacbf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Niveau d'Humidité",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ca3838",
+            "#e6e600",
+            "#20df40"
+        ],
+        "seg1": "30",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 550,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "268c2f4da3c7710f",
+        "type": "mqtt in",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ValeurTemperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 580,
+        "wires": [
+            [
+                "840f9463a59ad8a5",
+                "754c4666fee1cf0f"
+            ]
+        ]
+    },
+    {
+        "id": "941f342321730863",
+        "type": "ui_led",
+        "z": "691e77f87ab92094",
+        "order": 2,
+        "group": "2b749f51a98cf54b",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 470,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "36483e6daa47227b",
+        "type": "ui_led",
+        "z": "691e77f87ab92094",
+        "order": 4,
+        "group": "2b749f51a98cf54b",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 470,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9fd2c62534508bb5",
+        "type": "mqtt in",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ValeurNiveauEau",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "e1d3401fb0fe2ab3",
+                "f0bd11a28c40309b",
+                "20fd146be53c9431"
+            ]
+        ]
+    },
+    {
+        "id": "e1d3401fb0fe2ab3",
+        "type": "ui_text",
+        "z": "691e77f87ab92094",
+        "group": "32f0a104b2ebacbf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Niveau d'eau :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 540,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f0bd11a28c40309b",
+        "type": "ui_led",
+        "z": "691e77f87ab92094",
+        "order": 2,
+        "group": "32f0a104b2ebacbf",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "Vide",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "Plein",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 530,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "840f9463a59ad8a5",
+        "type": "switch",
+        "z": "691e77f87ab92094",
+        "name": "Controle_Temp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "30",
+                "vt": "str"
+            },
+            {
+                "t": "gte",
+                "v": "20",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 580,
+        "y": 580,
+        "wires": [
+            [
+                "90ea2e27afd0bb74"
+            ],
+            [
+                "3458d3f8c641e2cd"
+            ]
+        ]
+    },
+    {
+        "id": "9f8846f063054831",
+        "type": "ui_toast",
+        "z": "691e77f87ab92094",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 930,
+        "y": 620,
+        "wires": [],
+        "info": "IL COMMENCE A FAIRE CHAUD"
+    },
+    {
+        "id": "49b460f490b27f66",
+        "type": "ui_toast",
+        "z": "691e77f87ab92094",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 930,
+        "y": 560,
+        "wires": [],
+        "info": "IL FAIT TROP CHAUD"
+    },
+    {
+        "id": "90ea2e27afd0bb74",
+        "type": "function",
+        "z": "691e77f87ab92094",
+        "name": "function 30",
+        "func": "msg.payload=\"Température à plus de 30 degrès Celsius. Veuillez activer le ventilateur.\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 520,
+        "wires": [
+            [
+                "49b460f490b27f66"
+            ]
+        ]
+    },
+    {
+        "id": "3458d3f8c641e2cd",
+        "type": "function",
+        "z": "691e77f87ab92094",
+        "name": "function 31",
+        "func": "msg.payload=\"Température à plus de 20 degrès Celsius. Veuillez activer le ventilateur.\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 640,
+        "wires": [
+            [
+                "9f8846f063054831"
+            ]
+        ]
+    },
+    {
+        "id": "20fd146be53c9431",
+        "type": "switch",
+        "z": "691e77f87ab92094",
+        "name": "Controle_NiveauEau",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Vide",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 360,
+        "wires": [
+            [
+                "c8e48b6323625021"
+            ]
+        ]
+    },
+    {
+        "id": "b598b3cf163e3f56",
+        "type": "ui_toast",
+        "z": "691e77f87ab92094",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 930,
+        "y": 320,
+        "wires": [],
+        "info": "IL FAIT TROP CHAUD"
+    },
+    {
+        "id": "c8e48b6323625021",
+        "type": "function",
+        "z": "691e77f87ab92094",
+        "name": "function 32",
+        "func": "msg.payload=\"Le réservoir d'eau est vide. Veuillez le remplir.\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 280,
+        "wires": [
+            [
+                "b598b3cf163e3f56"
+            ]
+        ]
+    },
+    {
+        "id": "99bb22494e4c0b32",
+        "type": "mqtt in",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "topic": "esp32/Hydroponique_CBMK/ValeurQualiteAir",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8c2c7f720c310869",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 800,
+        "wires": [
+            [
+                "945a0ead44d47955"
+            ]
+        ]
+    },
+    {
+        "id": "81390bfdba70d8e7",
+        "type": "switch",
+        "z": "691e77f87ab92094",
+        "name": "Controle_NiveauHumidite",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "123",
+                "vt": "num"
+            },
+            {
+                "t": "lte",
+                "v": "12",
+                "vt": "num"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 480,
+        "wires": [
+            [
+                "6cd1e69d1ebc88b6"
+            ],
+            [
+                "f32e74b645d00e9c"
+            ]
+        ]
+    },
+    {
+        "id": "a419ed5c8ee40d9c",
+        "type": "ui_toast",
+        "z": "691e77f87ab92094",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 930,
+        "y": 440,
+        "wires": [],
+        "info": "IL FAIT TROP CHAUD"
+    },
+    {
+        "id": "6cd1e69d1ebc88b6",
+        "type": "function",
+        "z": "691e77f87ab92094",
+        "name": "function 33",
+        "func": "msg.payload=\"Qualité d'air trop faible. Veuillez activer le ventilateur.\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 400,
+        "wires": [
+            [
+                "a419ed5c8ee40d9c"
+            ]
+        ]
+    },
+    {
+        "id": "f32e74b645d00e9c",
+        "type": "function",
+        "z": "691e77f87ab92094",
+        "name": "function 34",
+        "func": "msg.payload=\"Qualité d'air trop faible. Veuillez activer le ventilateur.\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 480,
+        "wires": [
+            [
+                "a419ed5c8ee40d9c"
+            ]
+        ]
+    },
+    {
+        "id": "754c4666fee1cf0f",
+        "type": "ui_gauge",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "group": "f7f0f9b1b00325b1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Température",
+        "label": "degrès Celsius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "34",
+        "diff": false,
+        "className": "",
+        "x": 250,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "945a0ead44d47955",
+        "type": "ui_gauge",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "group": "f7f0f9b1b00325b1",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Qualité d'Air",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": "400",
+        "max": "2000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1000",
+        "seg2": "1400",
+        "diff": false,
+        "className": "",
+        "x": 550,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "9025fc49c4b38f18",
+        "type": "link in",
+        "z": "691e77f87ab92094",
+        "name": "link in 1",
+        "links": [
+            "b05c6e45dfe4ac6d"
+        ],
+        "x": 55,
+        "y": 920,
+        "wires": [
+            [
+                "74e6ed2d9239476f"
+            ]
+        ]
+    },
+    {
+        "id": "b9ac598f7073881b",
+        "type": "ui_ui_control",
+        "z": "691e77f87ab92094",
+        "name": "etat gestion à distance",
+        "events": "all",
+        "x": 660,
+        "y": 1020,
+        "wires": [
+            [
+                "9346f58e57f24680"
+            ]
+        ]
+    },
+    {
+        "id": "74e6ed2d9239476f",
+        "type": "switch",
+        "z": "691e77f87ab92094",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 160,
+        "y": 1020,
+        "wires": [
+            [
+                "805c30dcf44e80dd"
+            ],
+            [
+                "dbf14c05aff2a3cf"
+            ]
+        ]
+    },
+    {
+        "id": "805c30dcf44e80dd",
+        "type": "change",
+        "z": "691e77f87ab92094",
+        "name": "Show",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Gestion à distance\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1000,
+        "wires": [
+            [
+                "b9ac598f7073881b",
+                "9346f58e57f24680"
+            ]
+        ]
+    },
+    {
+        "id": "dbf14c05aff2a3cf",
+        "type": "change",
+        "z": "691e77f87ab92094",
+        "name": "hide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Gestion à distance\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1060,
+        "wires": [
+            [
+                "b9ac598f7073881b",
+                "9346f58e57f24680"
+            ]
+        ]
+    },
+    {
+        "id": "9346f58e57f24680",
+        "type": "debug",
+        "z": "691e77f87ab92094",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "ea762e0956b8475d",
+        "type": "function",
+        "z": "691e77f87ab92094",
+        "name": "function 35",
+        "func": "// Exemple de message JSON pour changer l'onglet actif à l'index 1\nmsg.payload = {\n    tab: { \n        // L'index de l'onglet que vous souhaitez activer (0, 1, 2, ...)\n        index: 1 \n    }\n};\nreturn msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "daa11249f4bb82fd",
+        "type": "function",
+        "z": "88740b080aad79ab",
+        "name": "requête SQL ",
+        "func": "let insert = \"INSERT INTO statitiques(temperature, luminosite, niveauEau, humidite)\" \n+  \"VALUES( \" + msg.payload.temp + \", \" + msg.payload.luminosite + \",\" + msg.payload.niveauEau + \",\" + msg.payload.humidite + \")\";\nmsg.topic = insert;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 120,
+        "wires": [
+            [
+                "8e719d295ed4d7a0"
+            ]
+        ]
+    },
+    {
+        "id": "8e719d295ed4d7a0",
+        "type": "mysql",
+        "z": "88740b080aad79ab",
+        "mydb": "c456dcd96c85fd0b",
+        "name": "BDD-stat",
+        "x": 680,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6609e2f566e4ad4",
+        "type": "inject",
+        "z": "88740b080aad79ab",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "date",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "7624e8aa9ea5613e"
+            ]
+        ]
+    },
+    {
+        "id": "7624e8aa9ea5613e",
+        "type": "function",
+        "z": "88740b080aad79ab",
+        "name": "récupérer les données",
+        "func": "msg.payload = {\n    humidite :  flow.get(\"humidite\"), \n    niveauEau :  flow.get(\"niveauEau\"),\n    luminosite :  flow.get(\"luminosite\"),\n    temp :  flow.get(\"temp\"),\n    qualiteAir :  flow.get(\"qualiteAir\"),\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "daa11249f4bb82fd"
+            ]
+        ]
+    },
+    {
+        "id": "a85794ed3eb9fd45",
+        "type": "inject",
+        "z": "88740b080aad79ab",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 12 * * 2,6",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "84f4efc8f20991c3",
+                "fa509448b3760fa4",
+                "16cce02e2f0a91aa",
+                "3a99a617df8fa01d"
+            ]
+        ]
+    },
+    {
+        "id": "fdefa349ceb817b1",
+        "type": "mysql",
+        "z": "88740b080aad79ab",
+        "mydb": "79505669bce756dc",
+        "name": "BDD-stat",
+        "x": 560,
+        "y": 180,
+        "wires": [
+            [
+                "7a90f5d76f7ebf61"
+            ]
+        ]
+    },
+    {
+        "id": "84f4efc8f20991c3",
+        "type": "function",
+        "z": "88740b080aad79ab",
+        "name": "requête SQL température",
+        "func": "let insert = \"SELECT temperature FROM statitiques\"\nmsg.topic = insert;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "fdefa349ceb817b1"
+            ]
+        ]
+    },
+    {
+        "id": "245f04d9ff81588b",
+        "type": "function",
+        "z": "88740b080aad79ab",
+        "name": "function 36",
+        "func": "var inputArray = msg.payload;\n\n    for (var i = 0; i < inputArray.length; i++) {\n        // Créer un nouveau message pour chaque élément\n        \n            msg.payload= inputArray[i]\n            msg.topic=\"temperature\"\n\n        // Envoyer le nouveau message au fil de sortie\n        node.send(msg);\n    }\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "global.set(\"test\",1);",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 180,
+        "wires": [
+            [
+                "eedd1902db5be9a8"
+            ]
+        ]
+    },
+    {
+        "id": "7a90f5d76f7ebf61",
+        "type": "change",
+        "z": "88740b080aad79ab",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "*.temperature",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 180,
+        "wires": [
+            [
+                "245f04d9ff81588b"
+            ]
+        ]
+    },
+    {
+        "id": "eedd1902db5be9a8",
+        "type": "ui_chart",
+        "z": "88740b080aad79ab",
+        "name": "",
+        "group": "11651c8067abbf22",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Evolution de la température durant les 5 derniers jours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "No data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "5",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "187791ea66b385de",
+        "type": "mysql",
+        "z": "88740b080aad79ab",
+        "mydb": "79505669bce756dc",
+        "name": "BDD-stat",
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "e74c9547470de3b9"
+            ]
+        ]
+    },
+    {
+        "id": "fa509448b3760fa4",
+        "type": "function",
+        "z": "88740b080aad79ab",
+        "name": "requête SQL luminosite",
+        "func": "let insert = \"SELECT luminosite FROM statitiques \"\nmsg.topic = insert;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "187791ea66b385de"
+            ]
+        ]
+    },
+    {
+        "id": "00edeee812380648",
+        "type": "function",
+        "z": "88740b080aad79ab",
+        "name": "function 37",
+        "func": "var inputArray = msg.payload;\n\n    for (var i = 0; i < inputArray.length; i++) {\n        // Créer un nouveau message pour chaque élément\n        \n            msg.payload= inputArray[i]\n            msg.topic=\"luminosite\"\n\n        // Envoyer le nouveau message au fil de sortie\n        node.send(msg);\n    }\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "global.set(\"test\",1);",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 340,
+        "wires": [
+            [
+                "131ae60e5a5bb4a2",
+                "f07a541015754ce9"
+            ]
+        ]
+    },
+    {
+        "id": "e74c9547470de3b9",
+        "type": "change",
+        "z": "88740b080aad79ab",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "*.luminosite",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "00edeee812380648"
+            ]
+        ]
+    },
+    {
+        "id": "ba597852b52464d5",
+        "type": "mysql",
+        "z": "88740b080aad79ab",
+        "mydb": "79505669bce756dc",
+        "name": "BDD-stat",
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "f31146b95ae796b6"
+            ]
+        ]
+    },
+    {
+        "id": "16cce02e2f0a91aa",
+        "type": "function",
+        "z": "88740b080aad79ab",
+        "name": "requête SQL Niveau d'eau",
+        "func": "let insert = \"SELECT niveauEau FROM statitiques\"\nmsg.topic = insert;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "ba597852b52464d5"
+            ]
+        ]
+    },
+    {
+        "id": "a8353696fca1d04a",
+        "type": "function",
+        "z": "88740b080aad79ab",
+        "name": "function 38",
+        "func": "var inputArray = msg.payload;\n\n    for (var i = 0; i < inputArray.length; i++) {\n        // Créer un nouveau message pour chaque élément\n        \n            msg.payload= inputArray[i]\n            msg.topic=\"NiveauEau\"\n\n        // Envoyer le nouveau message au fil de sortie\n        node.send(msg);\n    }\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "global.set(\"test\",1);",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 400,
+        "wires": [
+            [
+                "44082e28d60d6d14"
+            ]
+        ]
+    },
+    {
+        "id": "f31146b95ae796b6",
+        "type": "change",
+        "z": "88740b080aad79ab",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "*.niveauEau",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 400,
+        "wires": [
+            [
+                "a8353696fca1d04a"
+            ]
+        ]
+    },
+    {
+        "id": "a2c4a92a0236df2b",
+        "type": "mysql",
+        "z": "88740b080aad79ab",
+        "mydb": "79505669bce756dc",
+        "name": "BDD-stat",
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "57b662eb8a05a978"
+            ]
+        ]
+    },
+    {
+        "id": "3a99a617df8fa01d",
+        "type": "function",
+        "z": "88740b080aad79ab",
+        "name": "requête SQL humidité",
+        "func": "let insert = \"SELECT humidite FROM statitiques\"\nmsg.topic = insert;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 520,
+        "wires": [
+            [
+                "a2c4a92a0236df2b"
+            ]
+        ]
+    },
+    {
+        "id": "2d2c236cf1020c1c",
+        "type": "function",
+        "z": "88740b080aad79ab",
+        "name": "function 39",
+        "func": "var inputArray = msg.payload;\n\n    for (var i = 0; i < inputArray.length; i++) {\n        // Créer un nouveau message pour chaque élément\n        \n            msg.payload= inputArray[i]\n            msg.topic=\"humidite\"\n\n        // Envoyer le nouveau message au fil de sortie\n        node.send(msg);\n    }\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "global.set(\"test\",1);",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 460,
+        "wires": [
+            [
+                "be387e2c7dd19c62"
+            ]
+        ]
+    },
+    {
+        "id": "57b662eb8a05a978",
+        "type": "change",
+        "z": "88740b080aad79ab",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "*.humidite",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 460,
+        "wires": [
+            [
+                "2d2c236cf1020c1c"
+            ]
+        ]
+    },
+    {
+        "id": "131ae60e5a5bb4a2",
+        "type": "ui_chart",
+        "z": "88740b080aad79ab",
+        "name": "",
+        "group": "11651c8067abbf22",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Evolution de la luminosité durant les 5 derniers jours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "No data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "44082e28d60d6d14",
+        "type": "ui_chart",
+        "z": "88740b080aad79ab",
+        "name": "",
+        "group": "337895ccef068f91",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Evolution du Niveau d'Eau durant les 5 derniers jours",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "No data",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be387e2c7dd19c62",
+        "type": "ui_chart",
+        "z": "88740b080aad79ab",
+        "name": "",
+        "group": "337895ccef068f91",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Evolution de l'humidité durant les 5 derniers jours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "No data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 930,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f07a541015754ce9",
+        "type": "debug",
+        "z": "88740b080aad79ab",
+        "name": "debug 30",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 300,
+        "wires": []
+    }
+]
