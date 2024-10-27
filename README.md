@@ -1,0 +1,1 @@
+The goal of this project is to design an electronic system using an ESP32, featuring various sensors and actuators to address the specified objectives. The entire setup will be built into a model tailored to the project’s requirements and include a Node-RED server solution.
